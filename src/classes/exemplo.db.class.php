@@ -6,7 +6,7 @@ class DB
 
   public static function connect()
   {
-    $host = "hosto do seu banco";
+    $host = "host do seu banco";
     $dbname = "nome do seu banco";
     $user = "usuario de acesso ao banco";
     $password = "senha do usuario";
