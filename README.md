@@ -10,8 +10,8 @@ API criada em PHP sem a utilização de nenhum framework, hospedada em uma maqui
 
 ## :world_map: Rotas
 
-- `/usuarios [GET]:` - Rota para listar todos os usuários.
-- `/escolas [GET]:` - Rota para listar todos os usuários.
+- `/usuarios/lista [GET]:` - Rota para listar todos os usuários.
+- `/escolas/lista [GET]:` - Rota para listar todos os usuários.
 
 ## :wrench: Tecnologias utilizadas
 
