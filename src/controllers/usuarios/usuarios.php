@@ -1,8 +1,18 @@
 <?php
-if($rota == 'usuarios'){
-  
-  include_once('get.php');
-  
+if ($rota == 'usuarios') {
+
+  if ($method == 'GET') {
+    include_once('get.php');
+  }
+
+  if ($method == 'POST') {
+    include_once('post.php');
+  }
+
+  if ($method == 'PUT') {
+    include_once('put.php');
+  }
+
 }
 
 ?>

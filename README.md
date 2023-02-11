@@ -8,17 +8,17 @@
 
 API criada em PHP sem a utilização de nenhum framework, hospedada em uma maquina virtual da AWS utilizando o Docker compose, para cadastro e consultas em um Banco PostgreSQL
 
-## :world_map: Rotas
-
-- `/usuarios/lista [GET]:` - Rota para listar todos os usuários.
-- `/escolas/lista [GET]:` - Rota para listar todos os usuários.
-
 ## :wrench: Tecnologias utilizadas
 
 - PHP;
 - Docker;
 
-## :rocket: Rodando o projeto
+## :world_map: Rotas
+
+- `/usuarios/lista [GET]:` - Rota para listar todos os usuários.
+- `/usuarios/cadastro [POST]:` - Rota para cadastrar um novo usuário.
+
+## :clipboard: Modelos
 
 ...
 

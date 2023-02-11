@@ -7,9 +7,7 @@ header('Content-Type: application/json');
 if (isset($_GET['path'])) {
   $path = explode("/", $_GET['path']);
 } else {
-  echo "Você precisa definir a rota que deseja acessar. \n \n \n";
-  echo "Rotas possíveis: /usuarios. /escolas\n";
-  echo "Ações possíveis: /lista. ";
+  echo "Você precisa definir a rota que deseja acessar. ";
   exit;
 }
 
@@ -24,15 +22,14 @@ if (isset($path[1])) {
 }
 
 if (isset($path[2])) {
-  $param = $path[2];
+  $parametro = $path[2];
 } else {
-  $param = '';
+  $parametro = '';
 }
 
 $method = $_SERVER['REQUEST_METHOD'];
 
 include_once('./src/classes/db.class.php');
 include_once('./src/controllers/usuarios/usuarios.php');
-include_once('./src/controllers/escolas/escolas.php');
 
 ?>
