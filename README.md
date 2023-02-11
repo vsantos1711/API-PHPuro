@@ -20,13 +20,49 @@ API criada em PHP sem a utilização de nenhum framework, hospedada em uma maqui
 
 ## :clipboard: Modelos
 
-...
+<h3 dir="auto">POST</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Dado</th>
+      <th>Descrição</th>
+      <th>Valor padrão</th>
+      <th>Obrigatório</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td>ID do usuário. Pode ser incremental ou UUID.</td>
+      <td>Automático (UUID ou AUTOINCREMENT)</td>
+      <td>SIM</td>
+    </tr>
+    <tr>
+      <td>Nome</td>
+      <td>Nome do usuário.</td>
+      <td>Não possui valor padrão.</td>
+      <td>SIM</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>Email do usuário, utilizado para login.</td>
+      <td>Não possui valor padrão.</td>
+      <td>SIM</td>
+    </tr>
+    <tr>
+      <td>Telefone</td>
+      <td>Telefone do úsuario</td>
+      <td>Não possui valor padrão</td>
+      <td>NÃO</td>
+    </tr>
+  </tbody>
+</table>
 
 ## :soon: Implementação futura
 
-1. Rotas de cadastro
-2. Parâmetros das rotas
-3. Ações das rotas
+1. Rotas de PUT dos dados do usuário.
+2. Rota de DELETE de usuários.
+3. Respostas informativas.
 
 ## :handshake: Colaboradores
 
