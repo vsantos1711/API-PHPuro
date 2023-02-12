@@ -6,10 +6,9 @@ if ($acao == 'cadastro') {
   $dados = json_decode(file_get_contents("php://input"), true);
   try {
     $db = DB::connect();
+    if ($dados['nome'] && $dados['email'] && $dados['senha']) {
 
-    if ($dados->nome && $dados->email && $dados->senha) {
-
-      $sql = "INSERT INTO usuarios(";
+      $sql = "INSERT INTO usuarios (";
 
       $contador = 1;
       foreach (array_keys($dados) as $chave) {
@@ -26,9 +25,9 @@ if ($acao == 'cadastro') {
       $contador = 1;
       foreach (array_values($dados) as $valor) {
         if (count($dados) > $contador) {
-          $sql .= "{$valor}, ";
+          $sql .= "'{$valor}', ";
         } else {
-          $sql .= "{$valor} ";
+          $sql .= "'{$valor}' ";
         }
         $contador++;
       }
@@ -50,6 +49,11 @@ if ($acao == 'cadastro') {
   } catch (PDOException $e) {
     echo "Erro ao tentar conectar ao banco: " . $e->getMessage();
   }
+} else {
+  echo json_encode([
+    "Status" => "Você precisa definir a ação depois da barra",
+    "Ações" => "cadastro"
+  ]);
 }
 
 

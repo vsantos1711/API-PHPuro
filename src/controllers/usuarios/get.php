@@ -17,6 +17,11 @@ if ($acao == 'lista') {
   } catch (PDOException $e) {
     echo "Erro ao tentar conectar ao banco: " . $e->getMessage();
   }
+} else {
+  echo json_encode([
+    "Status" => "Você precisa definir a ação depois da barra",
+    "Ações" => "lista"
+  ]);
 }
 
 ?>

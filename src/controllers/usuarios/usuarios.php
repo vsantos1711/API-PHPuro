@@ -13,6 +13,9 @@ if ($rota == 'usuarios') {
     include_once('put.php');
   }
 
+  if ($method == 'DELETE') {
+    include_once('delete.php');
+  }
 }
 
 ?>
