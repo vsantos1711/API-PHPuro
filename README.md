@@ -18,6 +18,7 @@ API criada em PHP sem a utilização de nenhum framework, utilizando o Docker co
 - `/usuarios/lista [GET]:` - Rota para listar todos os usuários.
 - `/usuarios/cadastro [POST]:` - Rota para cadastrar um novo usuário.
 - `/usuarios/atualizar/id(número) [PUT]:` - Rota para atualizar informações sobre um usuário. (é necessário informar o id do usuário que você deseja alterar!)
+- `/usuarios/apagar/id(número) [DELETE]:` - Rota para apagar um usuário. (é necessário informar o id do usuário que você deseja apagar!)
 
 ## :clipboard: Modelos
 

@@ -2,10 +2,6 @@
 
 
 if ($acao == 'atualizar') {
-  if ($parametro == '') {
-    echo json_encode(['ERRO' => 'É necessário informar o id do usuário após da barra']);
-  }
-
   if ($parametro != '') {
 
     $dados = json_decode(file_get_contents("php://input"), true);
@@ -43,7 +39,12 @@ if ($acao == 'atualizar') {
     } catch (PDOException $e) {
       echo "Erro ao tentar conectar ao banco: " . $e->getMessage();
     }
+  } else {
+
+    echo json_encode(['Erro' => 'É necessário informar o id do usuário após da barra']);
+
   }
+
 } else {
   echo json_encode([
     "Status" => "Você precisa definir a ação depois da barra",
