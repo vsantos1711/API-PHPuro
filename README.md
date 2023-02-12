@@ -6,7 +6,7 @@
 
 ## :memo: Descrição
 
-API criada em PHP sem a utilização de nenhum framework, hospedada em uma maquina virtual da AWS utilizando o Docker compose, para cadastro e consultas em um Banco PostgreSQL
+API criada em PHP sem a utilização de nenhum framework, utilizando o Docker compose, para cadastro e consultas em um Banco PostgreSQL
 
 ## :wrench: Tecnologias utilizadas
 
@@ -17,17 +17,89 @@ API criada em PHP sem a utilização de nenhum framework, hospedada em uma maqui
 
 - `/usuarios/lista [GET]:` - Rota para listar todos os usuários.
 - `/usuarios/cadastro [POST]:` - Rota para cadastrar um novo usuário.
-- `/usuarios/atualizar/ `**id**` [PUT]:` - Rota para atualizar informações sobre um usuário.
+- `/usuarios/atualizar/ `**id**` [PUT]:` - Rota para atualizar informações sobre um usuário. (é necessário informar o id do usuário que você deseja alterar!)
 
 ## :clipboard: Modelos
 
-...
+<h3 dir="auto">POST</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Dado</th>
+      <th>Descrição</th>
+      <th>Valor padrão</th>
+      <th>Obrigatório</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nome</td>
+      <td>Nome do usuário.</td>
+      <td>Não possui valor padrão.</td>
+      <td>SIM</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>Email do usuário, utilizado para login.</td>
+      <td>Não possui valor padrão.</td>
+      <td>SIM</td>
+    </tr>
+    <tr>
+      <td>Senha</td>
+      <td>Senha do úsuario, utilizada para login.</td>
+      <td>Não possui valor padrão</td>
+      <td>SIM</td>
+    </tr>
+    <tr>
+      <td>Telefone</td>
+      <td>Telefone do úsuario</td>
+      <td>Não possui valor padrão</td>
+      <td>NÃO</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 dir="auto">PUT</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Dado</th>
+      <th>Descrição</th>
+      <th>Valor padrão</th>
+      <th>Obrigatório</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nome</td>
+      <td>Nome do usuário.</td>
+      <td>Não possui valor padrão.</td>
+      <td>NÃO</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>Email do usuário.</td>
+      <td>Não possui valor padrão.</td>
+      <td>NÃO</td>
+    </tr>
+    <tr>
+      <td>Senha</td>
+      <td>Senha do úsuario.</td>
+      <td>Não possui valor padrão.</td>
+      <td>NÃO</td>
+    </tr>
+    <tr>
+      <td>Telefone</td>
+      <td>Telefone do úsuario.</td>
+      <td>Não possui valor padrão.</td>
+      <td>NÃO</td>
+    </tr>
+  </tbody>
+</table>
 
 ## :soon: Implementação futura
 
-1. Rotas de PUT dos dados do usuário.
-2. Rota de DELETE de usuários.
-3. Respostas informativas.
+1. Rota de DELETE de usuários.
 
 ## :handshake: Colaboradores
 
