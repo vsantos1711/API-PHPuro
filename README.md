@@ -98,9 +98,18 @@ API criada em PHP sem a utilização de nenhum framework, utilizando o Docker co
   </tbody>
 </table>
 
-## :soon: Implementação futura
+## :rocket: Rodando o Projeto
+<h3 dir="auto">DOCKER</h3>
 
-1. Rota de DELETE de usuários.
+```bash
+# Renomeie exemplo.db.class.php para db.class.php
+# Preencha as váriaveis com as informações referentes ao seu banco POSTGRESQL
+# Salve o arquivo e rode os seguintes comandos na raiz do projeto:
+$ sudo service docker start 
+#ou sudo systemctl docker start (dependendo da sua dist)
+$docker compose up
+```
+
 
 ## :handshake: Colaboradores
 
