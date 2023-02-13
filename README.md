@@ -2,11 +2,11 @@
 
 ## :dart: Status do projeto
 
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20ANDAMENTO&color=GREEN&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 
 ## :memo: Descrição
 
-API criada em PHP sem a utilização de nenhum framework, utilizando o Docker compose, para cadastro e consultas em um Banco PostgreSQL
+API criada em PHP sem a utilização de nenhum framework, utilizando o Docker compose, visando a utilização dos quatro métodos: `GET, POST, PUT, DELETE` em um Banco PostgreSQL
 
 ## :wrench: Tecnologias utilizadas
 
@@ -106,7 +106,7 @@ API criada em PHP sem a utilização de nenhum framework, utilizando o Docker co
 # Preencha as váriaveis com as informações referentes ao seu banco POSTGRESQL
 # Salve o arquivo e rode os seguintes comandos na raiz do projeto:
 $ sudo service docker start 
-#ou sudo systemctl docker start (dependendo da sua dist)
+# ou sudo systemctl docker start (dependendo da sua dist)
 $docker compose up
 ```
 
