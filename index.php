@@ -7,7 +7,10 @@ header('Content-Type: application/json');
 if (isset($_GET['path'])) {
   $path = explode("/", $_GET['path']);
 } else {
-  echo json_encode("Você precisa definir a rota que deseja acessar.");
+  echo json_encode([
+    "Status" => "Você precisa definir a rota que deseja acessar depois da barra",
+    "Rotas:" => "usuarios"
+  ]);
   exit;
 }
 
